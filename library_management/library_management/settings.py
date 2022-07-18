@@ -33,7 +33,6 @@ environ.Env.read_env(os.path.join(BASE_DIR, ".env"))
 SECRET_KEY = env("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env("DEBUG")
-print(DEBUG)
 
 ALLOWED_HOSTS = ["*"]
 
@@ -139,3 +138,5 @@ if DEBUG == True:
     INSTALLED_APPS = INSTALLED_APPS + [
         "debug_toolbar",
     ]
+
+from .sentry_settings import *

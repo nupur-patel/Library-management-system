@@ -29,6 +29,8 @@ repos:
             "flake8-print",
             "flake8-simplify",
           ]
+        args:
+          - "--max-line-length=99"
   - repo: https://github.com/pycqa/bandit
     rev: 1.6.2
     hooks:
